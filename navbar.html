@@ -1,0 +1,20 @@
+<nav class="site-nav">
+  <div class="nav-container">
+    <a href="index.html" class="nav-brand">TOEIC</a>
+    <ul class="nav-menu">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="quiz.html">Quiz</a></li>
+      <li><a href="vocabulary.html">Vocabulary</a></li>
+      <li><a href="reading.html">Reading</a></li>
+      <li><a href="#">Rewards</a></li>
+      <li><a href="#">Profile</a></li>
+    </ul>
+  </div>
+</nav>
+
+<script>
+  // 取得目前頁面名稱，並為對應的導覽連結加上 active 類別
+  const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+  const navLinks = document.querySelectorAll('.nav-menu a');
+  navLinks.forEach(link => link.href.endsWith(currentPage) && link.classList.add('active'));
+</script>

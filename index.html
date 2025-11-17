@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TOEIC - 首頁</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="site-nav">
+    <div class="nav-container">
+      <a href="index.html" class="nav-brand">TOEIC</a>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="quiz.html">第一章：選擇題</a></li>
+        <li><a href="vocabulary.html">第二章：拼字練習</a></li>
+        <li><a href="reading.html">第三章：閱讀理解</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="site-header">
+    <h1>TOEIC</h1>
+    <p class="lead">使用 HTML/CSS/JavaScript 練習文法、拼字與閱讀理解（無後端）。</p>
+  </header>
+
+  <main class="container">
+    <section class="intro-section">
+      <h2>選擇練習項目</h2>
+      <nav class="section-grid">
+        <a class="card" href="quiz.html">
+          <span class="card-title">第一章：選擇題</span>
+          <span class="card-subtitle">Moodle 與線上學習平台基礎</span>
+          <span class="muted">10 題 多選</span>
+        </a>
+        <a class="card" href="vocabulary.html">
+          <span class="card-title">第二章：拼字練習</span>
+          <span class="card-subtitle">E-learning 相關詞彙</span>
+          <span class="muted">10 題 填空</span>
+        </a>
+        <a class="card" href="reading.html">
+          <span class="card-title">第三章：閱讀理解</span>
+          <span class="card-subtitle">短文理解與應用</span>
+          <span class="muted">2 篇 × 3 題</span>
+        </a>
+      </nav>
+    </section>
+  </main>
+
+  <footer class="site-footer">© 練習網站 • 本網站僅供學習使用</footer>
+
+  <script src="scorm_api_wrapper.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
